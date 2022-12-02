@@ -1,0 +1,480 @@
+{
+	"info": {
+		"_postman_id": "a971dca0-1578-49bf-b169-98a5235f040c",
+		"name": "BuzzBoard",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13375363"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"order_Id\":\"L12\",\r\n    \"item_name\":\"LAVA\",\r\n    \"cost\":\"5000\",\r\n    \"order_date\":\"2022/12/02\",\r\n    \"delivery_date\":\"2022/12/18\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/orders/create",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orders",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"order_Id\":\"L12\",\r\n    \"item_name\":\"LAVA\",\r\n    \"cost\":\"5000\",\r\n    \"order_date\":\"2022/12/02\",\r\n    \"delivery_date\":\"2022/12/18\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/orders/create",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"orders",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "203"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cb-It7upf3Cbv8vmEqj2kDdYItS15E\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Dec 2022 06:24:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Request Successfull..!!\",\n    \"data\": {\n        \"order_Id\": \"L12\",\n        \"item_name\": \"LAVA\",\n        \"cost\": 5000,\n        \"order_date\": \"2022/12/02\",\n        \"delivery_date\": \"2022/12/18\",\n        \"_id\": \"63899a0f9b0215a1b2bbe7b8\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "update",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"order_Id\":\"S12345\",\r\n    \"delivery_date\":\"2022/12/30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/orders/update",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orders",
+						"update"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"order_Id\":\"S12345\",\r\n    \"delivery_date\":\"2022/12/30\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/orders/update",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"orders",
+								"update"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "210"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d2-1e9lfaH2zCEP+B2wkoJkwvV0Ke8\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Dec 2022 06:16:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Request Successfull..!!\",\n    \"data\": {\n        \"_id\": \"6389977e52fba971aa857c47\",\n        \"order_Id\": \"S12345\",\n        \"item_name\": \"Samsung\",\n        \"cost\": 15000,\n        \"order_date\": \"2022/12/02\",\n        \"delivery_date\": \"2022/12/30\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "viewOrder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/orders/search?order_Id=RN123",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orders",
+						"search"
+					],
+					"query": [
+						{
+							"key": "order_Id",
+							"value": "RN123"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "viewOrder",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/orders/search?order_Id=RN123",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"orders",
+								"search"
+							],
+							"query": [
+								{
+									"key": "order_Id",
+									"value": "RN123"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "574"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"23e-MVdTtYbH1WZfURfk9t0RBKN+4Cs\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Dec 2022 18:30:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Request Successfull..!!\",\n    \"data\": [\n        {\n            \"_id\": \"6388dd223960848fe07228c1\",\n            \"order_Id\": \"123\",\n            \"item_name\": \"Samsung Mobile\",\n            \"cost\": 50000,\n            \"delivery_date\": \"2022/12/11\",\n            \"order_date\": \"2022-12-01T16:58:10.300Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6388de903960848fe07228c5\",\n            \"order_Id\": \"N123\",\n            \"item_name\": \"Nokia Mobile\",\n            \"cost\": 5000,\n            \"delivery_date\": \"2022/12/15\",\n            \"order_date\": \"2022-12-01T17:04:16.486Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6388df383960848fe07228c7\",\n            \"order_Id\": \"RN123\",\n            \"item_name\": \"RealMe\",\n            \"cost\": 15000,\n            \"delivery_date\": \"2022/12/18\",\n            \"order_date\": \"2022-12-01T17:07:04.581Z\",\n            \"__v\": 0\n        }\n    ],\n    \"count\": 3\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"order_Id\":\"RN123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/orders/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orders",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "order_Id",
+							"value": "RN123",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"order_Id\":\"RN123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/orders/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"orders",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "order_Id",
+									"value": "RN123",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-OGZVPih2ppLpyFAGCMpXtnODo5U\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Dec 2022 19:06:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Request Successfull..!!\",\n    \"msg\": \"order has been deleted\"\n}"
+				}
+			]
+		},
+		{
+			"name": "orderList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/orders/list?order_date=2022/12/02",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orders",
+						"list"
+					],
+					"query": [
+						{
+							"key": "order_date",
+							"value": "2022/12/02"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "orderList",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/orders/list?order_date=2022/12/02",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"orders",
+								"list"
+							],
+							"query": [
+								{
+									"key": "order_date",
+									"value": "2022/12/02"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "368"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"170-vwpeOIn3N9r6FiqUThYceKEVieA\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Dec 2022 06:24:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Request Successfull..!!\",\n    \"data\": [\n        {\n            \"_id\": \"6389977e52fba971aa857c47\",\n            \"order_Id\": \"S12345\",\n            \"item_name\": \"Samsung\",\n            \"cost\": 15000,\n            \"order_date\": \"2022/12/02\",\n            \"delivery_date\": \"2022/12/30\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"63899a0f9b0215a1b2bbe7b8\",\n            \"order_Id\": \"L12\",\n            \"item_name\": \"LAVA\",\n            \"cost\": 5000,\n            \"order_date\": \"2022/12/02\",\n            \"delivery_date\": \"2022/12/18\",\n            \"__v\": 0\n        }\n    ],\n    \"count\": 2\n}"
+				}
+			]
+		}
+	]
+}
